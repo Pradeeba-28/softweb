@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-section">
+            <img src="{% static 'images/logo.png' %}" class="logo">
+            <h1>Siam Bistro</h1>
+        </div>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/menu/">Menu</a>
+            <a href="/adminpage/">Administration</a>
+            <a href="/contact/">Contact Us</a>
+        </nav>
+
+    </header>
+
+    <section class="menu-section">
+
+        <h1>Our Thai Menu</h1>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+
+                <img src="{% static 'images/padthai.jpg' %}">
+
+                <h2>Pad Thai</h2>
+
+                <p>
+                    Traditional Thai stir-fried noodles
+                    with vegetables and peanuts.
+                </p>
+
+                <h3>₹250</h3>
+
+            </div>
+
+            <div class="menu-card">
+
+                <img src="{% static 'images/greencurry.jpg' %}">
+
+                <h2>Green Curry</h2>
+
+                <p>
+                    Authentic Thai green curry
+                    served with jasmine rice.
+                </p>
+
+                <h3>₹320</h3>
+
+            </div>
+
+            <div class="menu-card">
+
+                <img src="{% static 'images/tomyum.jpg' %}">
+
+                <h2>Tom Yum Soup</h2>
+
+                <p>
+                    Traditional Thai sour and spicy soup
+                    with shrimp and mushrooms.
+                </p>
+
+                <h3>₹280</h3>
+
+            </div>
+
+            <div class="menu-card">
+
+                <img src="{% static 'images/dessert.jpg' %}">
+
+                <h2>Mango Sticky Rice</h2>
+
+                <p>
+                    Sweet mango with creamy
+                    coconut sticky rice.
+                </p>
+
+                <h3>₹180</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <img src="{% static 'images/logo.png' %}" class="footer-logo">
+
+        <p>Designed and Developed by Pradeeba</p>
+
+    </footer>
+
+</body>
+</html>

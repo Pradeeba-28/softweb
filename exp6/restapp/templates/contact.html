@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-section">
+            <img src="{% static 'images/logo.png' %}" class="logo">
+            <h1>Siam Bistro</h1>
+        </div>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/menu/">Menu</a>
+            <a href="/adminpage/">Administration</a>
+            <a href="/contact/">Contact Us</a>
+        </nav>
+
+    </header>
+
+    <section class="contact-section">
+
+        <div class="contact-box">
+
+            <h1>Contact Us</h1>
+
+            <form>
+
+                <input type="text" placeholder="Your Name">
+
+                <input type="email" placeholder="Your Email">
+
+                <textarea rows="6" placeholder="Your Message"></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <img src="{% static 'images/logo.png' %}" class="footer-logo">
+
+        <p>Designed and Developed by Pradeeba</p>
+
+    </footer>
+
+</body>
+</html>
